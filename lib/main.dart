@@ -3,11 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:geolocator/geolocator.dart';
 
-<<<<<<< HEAD
 import 'package:speedometer/screens/dash_screen.dart';
-=======
-import 'package:speed_ometer/screens/dash_screen.dart';
->>>>>>> fb9b682e9b5151d81bad6608b8f3646861f030f5
 
 Future<void> main() async {
   // Placeholder Splash Screen Material App.

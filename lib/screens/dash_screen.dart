@@ -5,13 +5,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
-<<<<<<< HEAD
 import 'package:speedometer/components/speedometer.dart';
 import 'package:speedometer/components/tts_form.dart';
-=======
-import 'package:speed_ometer/components/speedometer.dart';
-import 'package:speed_ometer/components/tts_form.dart';
->>>>>>> fb9b682e9b5151d81bad6608b8f3646861f030f5
 
 class DashScreen extends StatefulWidget {
   const DashScreen({this.unit = 'm/s', Key? key}) : super(key: key);
@@ -200,11 +195,7 @@ class _DashScreenState extends State<DashScreen> {
         StreamBuilder<Object?>(
           stream: _velocityUpdatedStreamController.stream,
           builder: (context, snapshot) {
-<<<<<<< HEAD
-            return speedometer(
-=======
             return Speedometer(
->>>>>>> fb9b682e9b5151d81bad6608b8f3646861f030f5
               gaugeBegin: gaugeBegin,
               gaugeEnd: gaugeEnd,
               velocity: convertedVelocity(_velocity),

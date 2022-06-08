@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+import 'package:gender_picker/gender_picker.dart';
+import 'package:gender_picker/source/enums.dart';
+import 'package:numberpicker/numberpicker.dart';
+>>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
 
 /// Form that allows user to modify Text to Speech Speed Narration Settings.
 ///
@@ -90,6 +96,22 @@ class TextToSpeechSettingsForm extends StatelessWidget {
               ),
             ),
           ),
+<<<<<<< HEAD
+=======
+          GenderPickerWithImage(
+            verticalAlignedText: false,
+            selectedGender: (isTTSFemale) ? Gender.Female : Gender.Male,
+            unSelectedGenderTextStyle: const TextStyle(color: Colors.white),
+            onChanged: (Gender? gender) =>
+                femaleSetter(gender == Gender.Female),
+            equallyAligned: true,
+            animationDuration: const Duration(milliseconds: 300),
+            isCircular: true,
+            opacityOfGradient: 0.4,
+            padding: const EdgeInsets.all(3),
+            size: 70,
+          ),
+>>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
         ],
       ),
     );
@@ -145,11 +167,50 @@ class _TimeFormState extends State<TimeForm> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               StreamBuilder<Object>(
+<<<<<<< HEAD
                   stream: null, builder: (context, snapshot) {}),
+=======
+                  stream: null,
+                  builder: (context, snapshot) {
+                    return NumberPicker(
+                      zeroPad: true,
+                      selectedTextStyle: selectedTextStyle,
+                      textStyle: unselectedTextStyle,
+                      itemWidth: 65,
+                      value: _currentMinutes,
+                      minValue: 0,
+                      maxValue: 59,
+                      onChanged: (value) => setState(
+                        () {
+                          _currentMinutes = value;
+                          if (value == 0 && _currentSeconds < 3) {
+                            _currentSeconds = 3;
+                          }
+                        },
+                      ),
+                    );
+                  }),
+>>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
               const Text(
                 ':',
                 style: TextStyle(fontSize: 25, color: Colors.white24),
               ),
+<<<<<<< HEAD
+=======
+              NumberPicker(
+                zeroPad: true,
+                selectedTextStyle: selectedTextStyle,
+                textStyle: unselectedTextStyle,
+                itemWidth: 65,
+                value: _currentSeconds,
+                minValue: _currentMinutes > 0 ? 0 : 3,
+                maxValue: 59,
+                onChanged: (value) => setState(
+                  () => _currentSeconds =
+                      _currentMinutes > 0 || value >= 3 ? value : 3,
+                ),
+              ),
+>>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
             ],
           ),
           Container(

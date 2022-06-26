@@ -93,19 +93,6 @@ class TextToSpeechSettingsForm extends StatelessWidget {
               ),
             ),
           ),
-          GenderPickerWithImage(
-            verticalAlignedText: false,
-            selectedGender: (isTTSFemale) ? Gender.Female : Gender.Male,
-            unSelectedGenderTextStyle: const TextStyle(color: Colors.white),
-            onChanged: (Gender? gender) =>
-                femaleSetter(gender == Gender.Female),
-            equallyAligned: true,
-            animationDuration: const Duration(milliseconds: 300),
-            isCircular: true,
-            opacityOfGradient: 0.4,
-            padding: const EdgeInsets.all(3),
-            size: 70,
-          ),
         ],
       ),
     );

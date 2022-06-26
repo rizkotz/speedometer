@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:geolocator/geolocator.dart';
 
+import 'package:speed_ometer/screens/dash_screen.dart';
+
 Future<void> main() async {
   // Placeholder Splash Screen Material App.
   runApp(const NoPermissionApp(hasCheckedPermissions: false));

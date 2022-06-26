@@ -1,6 +1,6 @@
 {
-    "name": "speedometer",
-    "short_name": "speedometer",
+    "name": "speed_ometer",
+    "short_name": "speed_ometer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

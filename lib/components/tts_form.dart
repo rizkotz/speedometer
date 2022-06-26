@@ -49,7 +49,7 @@ class TextToSpeechSettingsForm extends StatelessWidget {
               Switch(
                 value: isTTSActive,
                 onChanged: (bool newIsActive) => activeSetter(newIsActive),
-                activeColor: const Color(0xFFE9A246),
+                activeColor: Color.fromARGB(255, 4, 0, 255),
               ),
             ],
           ),
@@ -58,7 +58,7 @@ class TextToSpeechSettingsForm extends StatelessWidget {
             child: TextButton(
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(const Color(0xFFD68822)),
+                    MaterialStateProperty.all(Color.fromARGB(255, 0, 4, 255)),
                 padding: MaterialStateProperty.all(
                   const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                 ),

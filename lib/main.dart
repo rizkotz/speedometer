@@ -92,7 +92,7 @@ class _SpeedometerAppState extends State<SpeedometerApp> {
                 .headline6!
                 .copyWith(color: Colors.white),
           ),
-          backgroundColor: Colors.black,
+          backgroundColor: Color.fromARGB(255, 9, 16, 73),
           // Makes one Unit Selection button for each potential unit (m/s, km/h and miles/h programmed)
           actions: units.map<Widget>(
             (String unitType) {
@@ -126,7 +126,7 @@ class _UnitSelectionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color textColor = unitButtonName != currentSelectedUnit
         ? Colors.white
-        : const Color(0xFFE9A246);
+        : Color.fromARGB(255, 218, 156, 69);
     return Container(
       padding: const EdgeInsets.only(right: 10),
       child: TextButton(
@@ -171,7 +171,7 @@ class NoPermissionApp extends StatelessWidget {
     }
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Color.fromARGB(255, 9, 8, 75),
         body: Center(child: outWidget),
       ),
     );

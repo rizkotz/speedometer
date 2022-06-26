@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
 import 'package:syncfusion_flutter_gauges/gauges.dart';
->>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
 
 /// The central speedometer made using Syncfusion gauge package, that shows current speed
 ///

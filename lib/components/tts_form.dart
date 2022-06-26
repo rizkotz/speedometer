@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
 import 'package:gender_picker/gender_picker.dart';
 import 'package:gender_picker/source/enums.dart';
 import 'package:numberpicker/numberpicker.dart';
->>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
 
 /// Form that allows user to modify Text to Speech Speed Narration Settings.
 ///
@@ -96,8 +93,6 @@ class TextToSpeechSettingsForm extends StatelessWidget {
               ),
             ),
           ),
-<<<<<<< HEAD
-=======
           GenderPickerWithImage(
             verticalAlignedText: false,
             selectedGender: (isTTSFemale) ? Gender.Female : Gender.Male,
@@ -111,7 +106,6 @@ class TextToSpeechSettingsForm extends StatelessWidget {
             padding: const EdgeInsets.all(3),
             size: 70,
           ),
->>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
         ],
       ),
     );
@@ -167,9 +161,6 @@ class _TimeFormState extends State<TimeForm> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               StreamBuilder<Object>(
-<<<<<<< HEAD
-                  stream: null, builder: (context, snapshot) {}),
-=======
                   stream: null,
                   builder: (context, snapshot) {
                     return NumberPicker(
@@ -190,13 +181,10 @@ class _TimeFormState extends State<TimeForm> {
                       ),
                     );
                   }),
->>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
               const Text(
                 ':',
                 style: TextStyle(fontSize: 25, color: Colors.white24),
               ),
-<<<<<<< HEAD
-=======
               NumberPicker(
                 zeroPad: true,
                 selectedTextStyle: selectedTextStyle,
@@ -210,7 +198,6 @@ class _TimeFormState extends State<TimeForm> {
                       _currentMinutes > 0 || value >= 3 ? value : 3,
                 ),
               ),
->>>>>>> dd1aebddfdebeee908c19fd899eb839ba2b8a3c9
             ],
           ),
           Container(

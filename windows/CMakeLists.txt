@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(speedometer LANGUAGES CXX)
+project(speed_ometer LANGUAGES CXX)
 
-set(BINARY_NAME "speedometer")
+set(BINARY_NAME "speed_ometer")
 
 cmake_policy(SET CMP0063 NEW)
 

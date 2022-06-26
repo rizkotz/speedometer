@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "speedometer" "\0"
+            VALUE "FileDescription", "speed_ometer" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "speedometer" "\0"
+            VALUE "InternalName", "speed_ometer" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "speedometer.exe" "\0"
-            VALUE "ProductName", "speedometer" "\0"
+            VALUE "OriginalFilename", "speed_ometer.exe" "\0"
+            VALUE "ProductName", "speed_ometer" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

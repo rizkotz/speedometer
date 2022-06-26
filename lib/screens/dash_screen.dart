@@ -47,11 +47,7 @@ class _DashScreenState extends State<DashScreen> {
   }
 
   void _startTTS() {
-    if (!_isTTSFemale) {
-      _ttsService.setVoice({'name': 'en-us-x-tpd-local', 'locale': 'en-US'});
-    } else {
-      _ttsService.setVoice({'name': 'en-US-language', 'locale': 'en-US'});
-    }
+    _ttsService.setVoice({'name': 'en-US-language', 'locale': 'en-US'});
 
     _ttsCallback?.cancel();
 
@@ -75,16 +71,6 @@ class _DashScreenState extends State<DashScreen> {
           } else {
             _ttsCallback?.cancel();
           }
-        },
-      );
-
-  /// TTS gender
-  bool _isTTSFemale = true;
-  void setIsFemale(bool isFemale) => setState(
-        () {
-          _isTTSFemale = isFemale;
-          _sharedPreferences?.setBool('isTTSFemale', _isTTSFemale);
-          if (_isTTSActive) _startTTS();
         },
       );
 
@@ -165,7 +151,6 @@ class _DashScreenState extends State<DashScreen> {
       (SharedPreferences prefs) {
         _sharedPreferences = prefs;
         _isTTSActive = prefs.getBool('isTTSActive') ?? true;
-        _isTTSFemale = prefs.getBool('isTTSFemale') ?? true;
         _ttsDuration = _secondsToDuration(prefs.getInt('ttsDuration') ?? 3);
         // Start text to speech service
         _startTTS();
@@ -206,10 +191,8 @@ class _DashScreenState extends State<DashScreen> {
         ),
         TextToSpeechSettingsForm(
           isTTSActive: _isTTSActive,
-          isTTSFemale: _isTTSFemale,
           currentDuration: _ttsDuration,
           activeSetter: setIsActive,
-          femaleSetter: setIsFemale,
           durationSetter: setDuration,
         ),
       ],

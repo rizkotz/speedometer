@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gender_picker/gender_picker.dart';
-import 'package:gender_picker/source/enums.dart';
 import 'package:numberpicker/numberpicker.dart';
 
 /// Form that allows user to modify Text to Speech Speed Narration Settings.
@@ -9,20 +7,17 @@ import 'package:numberpicker/numberpicker.dart';
 class TextToSpeechSettingsForm extends StatelessWidget {
   const TextToSpeechSettingsForm({
     required this.isTTSActive,
-    required this.isTTSFemale,
     required this.currentDuration,
     required this.activeSetter,
-    required this.femaleSetter,
     required this.durationSetter,
     Key? key,
   }) : super(key: key);
 
   final bool isTTSActive;
-  final bool isTTSFemale;
   final Duration? currentDuration;
 
   final void Function(bool) activeSetter;
-  final void Function(bool) femaleSetter;
+
   final void Function(int) durationSetter;
 
   @override

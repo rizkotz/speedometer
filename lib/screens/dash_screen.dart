@@ -5,8 +5,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
-import 'package:speed_ometer/components/speedometer.dart';
-import 'package:speed_ometer/components/tts_form.dart';
+import 'package:speedometer/components/speedometer.dart';
+import 'package:speedometer/components/tts_form.dart';
 
 class DashScreen extends StatefulWidget {
   const DashScreen({this.unit = 'm/s', Key? key}) : super(key: key);

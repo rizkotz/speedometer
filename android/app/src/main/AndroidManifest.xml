@@ -1,10 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.speed_ometer">
-   <uses-permission android:name="android.permission.INTERNET" />
-   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    package="com.example.speedometer">
    <application
-        android:label="speed_ometer"
+        android:label="speedometer"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
